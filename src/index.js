@@ -90,7 +90,34 @@
 // console.log(null || (2 && 3) || 4);
 
 
-const incomingValue = 5;
-const defaultValue = 10;
-const value = incomingValue !== undefined && incomingValue !== null ? incomingValue : defaultValue;
-console.log(value);
+// const incomingValue = 5;
+// const defaultValue = 10;
+// const value = incomingValue !== undefined && incomingValue !== null
+// ? incomingValue : defaultValue;
+// console.log(value);
+
+
+// const totalMinutes = 170;
+
+// const hours = Math.floor(totalMinutes / 60);
+// const minutes = totalMinutes % 60;
+// console.log(hours);
+// console.log(minutes);
+
+// const doubleDigitHours = String(hours).padStart(2, 0);
+// const doubleDigitMinutes = String(minutes).padStart(2, 0);
+// console.log(`${hours}:${minutes}`);
+
+
+
+
+
+let officialname = prompt("Какое официальное название JavaScript?", "");
+
+if (officialname === 'ECMAScript') {
+  
+  console.log(alert('Верно !'));
+  
+} else {
+ console.log('Не знаете? ECMAScript!');
+}
