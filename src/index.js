@@ -112,12 +112,93 @@
 
 
 
-let officialname = prompt("Какое официальное название JavaScript?", "");
+// let officialname = prompt("Какое официальное название JavaScript?", "");
 
-if (officialname === 'ECMAScript') {
+// if (officialname === 'ECMAScript') {
   
-  console.log(alert('Верно !'));
+//   console.log(alert('Верно !'));
   
-} else {
- console.log('Не знаете? ECMAScript!');
-}
+// } else {
+//  console.log('Не знаете? ECMAScript!');
+// }
+
+
+
+// const hours = 14;
+// const minutes = 26;
+// let timestring;
+
+// if (minutes > 0) {
+//   timestring = `${hours} ч. ${minutes} мин.`;
+// } else {
+//   timestring = `${hours} ч.`;
+// }
+// console.log(timestring);
+
+
+
+// const userInput = prompt('Введите число', '');
+// const numeric = Number(userInput) || 0;
+
+// if(numeric > 0) {
+//   console.log('Это положительное число');
+// } else if (numeric < 0) {
+//   console.log('Это отрицательное число');
+// } else {
+// console.log('Это ноль');
+// }
+
+
+
+// const a = 120;
+// const b = 180;
+
+// const sum = a > 100 && b > 100 ? ( a > b ? a : b) : b + 512;
+// console.log(sum);
+
+
+
+// let link = 'https://my-site.com/about';
+// // Пиши код ниже этой строки
+// if (link.endsWith('/')) {
+//   link = link;
+// } else {
+//   link = link + '/';
+// }
+// // Пиши код выше этой строки
+// console.log(link);
+
+
+
+
+// let link = 'https://my-site.com/about';
+// // Пиши код ниже этой строки
+// if (!link.endsWith('/') && link.includes('my-site')) {
+//   link = link + '/';
+// } else {
+//   link = link;
+// }
+// // Пиши код выше этой строки
+// console.log(link);
+
+
+
+// let link = 'https://my-site.com/about';
+// // Пиши код ниже этой строки
+
+// link = (!link.endsWith('/') && link.includes('my-site')) ? link = link + '/' : link;
+
+// // Пиши код выше этой строки
+// console.log(link);
+
+
+
+// const hours = 10;
+
+// if (hours < 17) {
+//   console.log('Pending');
+// } else if (hours >= 17 && hours <= 24) {
+//   console.log('Expires');
+// } else {
+//   console.log('Overdue');
+// }
