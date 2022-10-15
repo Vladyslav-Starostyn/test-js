@@ -202,3 +202,75 @@
 // } else {
 //   console.log('Overdue');
 // }
+
+
+
+
+// const daysUntilDeadline = 3;
+// let string;
+// // Пиши код ниже этой строки
+// if (daysUntilDeadline === 0) {
+//   string = 'Сегодня'
+// } else if (daysUntilDeadline === 1) {
+//   string = 'Завтра';
+// }  else if (daysUntilDeadline === 2) {
+//   string = 'Послезавтра';
+// } else  {
+//   string = 'Дата в будущем';
+// }
+// console.log(string);
+
+
+
+
+// const daysUntilDeadline = 2;
+// let string;
+
+// switch (daysUntilDeadline) {
+//   case 0:
+//     string = 'Сегодня';
+//     break;
+
+//   case 1:
+//     string = 'Завтра';
+//     break;
+  
+//   case 2:
+//     string = 'Послезавтра';
+//     break;
+
+//   default:
+//     string = 'Дата в будущем';
+// }
+// console.log(string);
+
+
+
+// const max = 100;
+// const min = 20;
+
+// for (let i = min; i <= max; i += 5) {
+//   console.log(i);
+// }
+
+
+
+
+// const login = prompt('Логин');
+
+// if (login) {
+//   if (login === 'Админ') {
+//     const password = prompt('Введите пароль');
+
+//     if (password === 'Я админ') {
+//       console.log('Здравствуйте!');
+//     } else {
+//       console.log('Неверный пароль');
+//     }
+//   } else {
+//     console.log('Я вас не знаю');
+//   }
+  
+// } else {
+//   console.log('Отменено');
+// }
