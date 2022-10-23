@@ -58,6 +58,7 @@
 // for (let i = 0; i < fruits.length; i += 1) {
 //   let namber = i + 1;
 //   console.log(`${namber}: ${fruits[i]}`);
+// }
   
 // Example 4 - Массивы и циклы
 

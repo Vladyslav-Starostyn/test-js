@@ -80,10 +80,16 @@
 // Например для первого элемента массива['Mango', 'Poly', 'Ajax'] с индексом 0 будет
 // выведено 1 - Mango, а для индекса 2 выведет 3 - Ajax.
 
-// function logItems(items) {}
+function logItems(items) {
+  for (let i = 0; i < items.length ; i += 1) {
+    let namber = i + 1;
+    
+    console.log(`${namber} - ${items[i]}`);
+  }
+}
 
-// logItems(['Mango', 'Poly', 'Ajax']);
-// logItems(['🍎', '🍇', '🍑', '🍌', '🍋']);
+logItems(['Mango', 'Poly', 'Ajax']);
+logItems(['🍎', '🍇', '🍑', '🍌', '🍋']);
 
 
 
