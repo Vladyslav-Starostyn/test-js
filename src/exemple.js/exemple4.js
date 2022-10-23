@@ -11,9 +11,15 @@
 
 // Индекс массы тела необходимо округлить до одной цифры после запятой;
 
-const bmi = calcBMI('88,3', '1.75');
+// const calcBMI = function (weight, height) {
+//  const weightNam = parseFloat(weight.replace(',','.'));
+//   const heightNam = parseFloat(height.replace(',', '.'));
+  
+//  return parseFloat((weightNam  / Math.pow(heightNam, 2)).toFixed(1))
+// }
+// const bmi = calcBMI('88,3', '1.75');
 
-console.log(bmi); // 28.8
+// console.log(bmi); // 28.8
 
 
 
@@ -22,10 +28,28 @@ console.log(bmi); // 28.8
 
 // Напиши функцию min(a,b), которая возвращает меньшее из чисел a и b.
 
+// const min = function (a, b) {
+  
+//   return a < b ? a : b;
+// }
+
+          // или   
+
+// const min = function (a, b) {
+//   let res = arguments[0];
+//   for (const num of arguments) {
+//     if (num < res) {
+//       res = num;
+//    }
+//  }
+
+//   return res;
+// }
+
 // console.log(min(2, 5)); // 2
 // console.log(min(3, -1)); // -1
 // console.log(min(1, 1)); // 1
-
+// console.log(min(1, 1, 5, -4, 6, 0, -7));
 
 
 
@@ -35,7 +59,11 @@ console.log(bmi); // 28.8
 // сторонами, значения которых будут переданы в параметр dimensions в виде строки.
 // Значения гарантированно разделены пробелом.
 
-// function getRectArea(dimensions) {}
+// function getRectArea(dimensions) {
+//   const sides = dimensions.split(' ');
+
+//   return parseFloat(sides[0]) * parseFloat(sides[1]);
+// }
 
 // console.log(getRectArea('8 11'));
 
