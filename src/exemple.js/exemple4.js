@@ -80,16 +80,16 @@
 // Например для первого элемента массива['Mango', 'Poly', 'Ajax'] с индексом 0 будет
 // выведено 1 - Mango, а для индекса 2 выведет 3 - Ajax.
 
-function logItems(items) {
-  for (let i = 0; i < items.length ; i += 1) {
-    let namber = i + 1;
+// function logItems(items) {
+//   for (let i = 0; i < items.length ; i += 1) {
+//     let namber = i + 1;
     
-    console.log(`${namber} - ${items[i]}`);
-  }
-}
+//     console.log(`${namber} - ${items[i]}`);
+//   }
+// }
 
-logItems(['Mango', 'Poly', 'Ajax']);
-logItems(['🍎', '🍇', '🍑', '🍌', '🍋']);
+// logItems(['Mango', 'Poly', 'Ajax']);
+// logItems(['🍎', '🍇', '🍑', '🍌', '🍋']);
 
 
 
@@ -101,7 +101,15 @@ logItems(['🍎', '🍇', '🍑', '🍌', '🍋']);
 // телефонных номеров, разделенные запятыми.Порядковый номер имен и телефонов в строках
 // указывают на соответствие.Количество имен и телефонов гарантированно одинаковое.
 
-// function printContactsInfo(names, phones) {}
+// function printContactsInfo(names, phones) {
+//   const arryNames = names.split(',');
+//   const arryPhones = phones.split(',');
+  
+//   for (let i = 0; i < arryNames.length; i += 1) {
+
+//     console.log(`${(arryNames[i]).padEnd(10,' ')} tel.: ${arryPhones[i]}`);
+//   }
+// }
 
 // printContactsInfo(
 //   'Jacob,William,Solomon,Artemis',
@@ -115,7 +123,16 @@ logItems(['🍎', '🍇', '🍑', '🍌', '🍋']);
 
 // Напиши функцию findLargestNumber(numbers)которая ищет самое большое число в массиве.
 
-// function findLargestNumber(numbers) {}
+// function findLargestNumber(numbers) {
+//   let max = numbers[0];
+//   for (const number of numbers) {
+//     if (number > max) {
+//       max = number;
+//     }
+//   }
+
+//   return max;
+// }
 
 // console.log(findLargestNumber([2, 17, 94, 1, 23, 37])); // 94
 // console.log(findLargestNumber([49, 4, 7, 83, 12])); // 83
@@ -128,7 +145,13 @@ logItems(['🍎', '🍇', '🍑', '🍌', '🍋']);
 // Напишите функцию calAverage() которая принимает произвольное кол - во аргументов и
 // возвращает их среднее значение.Все аругменты будут только числами.
 
-// function calAverage() {}
+// function calAverage() {
+//   let total = 0;
+//   for (const nam of arguments) {
+//     total += nam;
+//   }
+//   return total / arguments.length;
+// }
 
 // console.log(calAverage(1, 2, 3, 4)); // 2.5
 // console.log(calAverage(14, 8, 2)); // 8
@@ -142,16 +165,16 @@ logItems(['🍎', '🍇', '🍑', '🍌', '🍋']);
 // Напиши функцию formatTime(minutes) которая переведёт значение minutes(количество минут)
 // в строку в формате часов и минут HH: MM.
 
-// const hours = Math.floor(totalMinutes / 60);
-// const minutes = totalMinutes % 60;
-// console.log(hours);
-// console.log(minutes);
+// function formatTime(totalMinutes) {
+//    const hours = Math.floor(totalMinutes / 60);
+//    const minutes = totalMinutes % 60;
+//    console.log(hours);
+//    console.log(minutes);
 
-// const doubleDigitHours = String(hours).padStart(2, 0);
-// const doubleDigitMinutes = String(minutes).padStart(2, 0);
-// console.log(`${doubleDigitHours}:${doubleDigitMinutes}`);
-
-// function formatTime(minutes) {}
+//    const doubleDigitHours = String(hours).padStart(2, 0);
+//    const doubleDigitMinutes = String(minutes).padStart(2, 0);
+//    return `${doubleDigitHours}:${doubleDigitMinutes}`;
+// }
 
 // console.log(formatTime(70)); // "01:10"
 // console.log(formatTime(450)); // "07:30"
@@ -168,18 +191,43 @@ logItems(['🍎', '🍇', '🍑', '🍌', '🍋']);
 // removeCourse(name) - удаляет курс из коллекции
 // updateCourse(oldName, newName) - изменяет имя на новое
 // const courses = ['HTML', 'CSS', 'JavaScript', 'React', 'PostgreSQL'];
+// function addCourse(name) {
+
+//    if (courses.includes(name)) {
+//       console.log('У вас уже есть такой курс'); 
+//       return;
+//    }
+
+//    courses.push(name);
+// }
+
 
 // addCourse('Express');
 // console.log(courses); // ['HTML', 'CSS', 'JavaScript', 'React', 'PostgreSQL', 'Express']
 // addCourse('CSS'); // 'У вас уже есть такой курс'
 
+// function removeCourse(name) {
+//    const index = courses.indexOf(name);
+//    if (index != -1) {
+//       courses.splice(index, 1);
+//    } else {
+//       console.log('Курс с таким имененем не найден');
+//    }
+   
+// }
+
 // removeCourse('React');
 // console.log(courses); // ['HTML', 'CSS', 'JavaScript', 'PostgreSQL', 'Express']
 // removeCourse('Vue'); // 'Курс с таким имененем не найден'
 
+
+// function updateCourse(oldName, newName) {
+   
+//   courses.splice(courses.indexOf(oldName), 1, newName) 
+// }
+
 // updateCourse('Express', 'NestJS');
 // console.log(courses); // ['HTML', 'CSS', 'JavaScript', 'PostgreSQL', 'NestJS']
-// }
 
 
 //=====================================================================================//
