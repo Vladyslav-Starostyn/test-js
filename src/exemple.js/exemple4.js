@@ -14,26 +14,25 @@
 // const calcBMI = function (weight, height) {
 //  const weightNam = parseFloat(weight.replace(',','.'));
 //   const heightNam = parseFloat(height.replace(',', '.'));
-  
+
 //  return parseFloat((weightNam  / Math.pow(heightNam, 2)).toFixed(1))
 // }
 // const bmi = calcBMI('88,3', '1.75');
 
 // console.log(bmi); // 28.8
 
-
-
+//=====================================================================================//
 
 // Example 2 - Меньшее из чисел
 
 // Напиши функцию min(a,b), которая возвращает меньшее из чисел a и b.
 
 // const min = function (a, b) {
-  
+
 //   return a < b ? a : b;
 // }
 
-          // или   
+// или
 
 // const min = function (a, b) {
 //   let res = arguments[0];
@@ -51,7 +50,7 @@
 // console.log(min(1, 1)); // 1
 // console.log(min(1, 1, 5, -4, 6, 0, -7));
 
-
+//=====================================================================================//
 
 // Example 3 - Площадь прямоугольника
 
@@ -67,8 +66,7 @@
 
 // console.log(getRectArea('8 11'));
 
-
-
+//=====================================================================================//
 
 // Example 4 - Логирование элементов
 
@@ -83,7 +81,7 @@
 // function logItems(items) {
 //   for (let i = 0; i < items.length ; i += 1) {
 //     let namber = i + 1;
-    
+
 //     console.log(`${namber} - ${items[i]}`);
 //   }
 // }
@@ -91,8 +89,7 @@
 // logItems(['Mango', 'Poly', 'Ajax']);
 // logItems(['🍎', '🍇', '🍑', '🍌', '🍋']);
 
-
-
+//=====================================================================================//
 
 // Example 5 - Логирование контактов
 
@@ -104,7 +101,7 @@
 // function printContactsInfo(names, phones) {
 //   const arryNames = names.split(',');
 //   const arryPhones = phones.split(',');
-  
+
 //   for (let i = 0; i < arryNames.length; i += 1) {
 
 //     console.log(`${(arryNames[i]).padEnd(10,' ')} tel.: ${arryPhones[i]}`);
@@ -116,8 +113,7 @@
 //   '89001234567,89001112233,890055566377,890055566300',
 // );
 
-
-
+//=====================================================================================//
 
 // Example 6 - Поиск наибольшего элемента
 
@@ -137,8 +133,7 @@
 // console.log(findLargestNumber([2, 17, 94, 1, 23, 37])); // 94
 // console.log(findLargestNumber([49, 4, 7, 83, 12])); // 83
 
-
-
+//=====================================================================================//
 
 // Example 7 - Среднее значение
 
@@ -157,8 +152,7 @@
 // console.log(calAverage(14, 8, 2)); // 8
 // console.log(calAverage(27, 43, 2, 8, 36)); // 23.2
 
-
-
+//=====================================================================================//
 
 // Example 8 - Форматирование времени
 
@@ -180,8 +174,7 @@
 // console.log(formatTime(450)); // "07:30"
 // console.log(formatTime(1441)); // "24:01"
 
-
-
+//=====================================================================================//
 
 // Example 9 - Коллекция курсов(includes, indexOf, push и т.д.)
 
@@ -194,13 +187,12 @@
 // function addCourse(name) {
 
 //    if (courses.includes(name)) {
-//       console.log('У вас уже есть такой курс'); 
+//       console.log('У вас уже есть такой курс');
 //       return;
 //    }
 
 //    courses.push(name);
 // }
-
 
 // addCourse('Express');
 // console.log(courses); // ['HTML', 'CSS', 'JavaScript', 'React', 'PostgreSQL', 'Express']
@@ -213,21 +205,19 @@
 //    } else {
 //       console.log('Курс с таким имененем не найден');
 //    }
-   
+
 // }
 
 // removeCourse('React');
 // console.log(courses); // ['HTML', 'CSS', 'JavaScript', 'PostgreSQL', 'Express']
 // removeCourse('Vue'); // 'Курс с таким имененем не найден'
 
-
 // function updateCourse(oldName, newName) {
-   
-//   courses.splice(courses.indexOf(oldName), 1, newName) 
+
+//   courses.splice(courses.indexOf(oldName), 1, newName)
 // }
 
 // updateCourse('Express', 'NestJS');
 // console.log(courses); // ['HTML', 'CSS', 'JavaScript', 'PostgreSQL', 'NestJS']
-
 
 //=====================================================================================//
