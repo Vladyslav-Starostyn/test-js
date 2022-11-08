@@ -209,3 +209,26 @@
 // );
 
 //=====================================================================================//
+
+//                                   замыкание                                         //
+
+// const fnA = function (parametr) {
+//   const innerVariable = 'Значение внутренней переменной fnA';
+
+//   const innerFunction = function () {
+//     console.log(parametr);
+//     console.log(innerVariable);
+//     console.log('это вызов innerFunction');
+//   };
+
+//   return innerFunction;
+// };
+
+// const fnB = fnA(555);
+
+// // console.log(fnA);
+// // console.log(fnB);
+
+// fnB( );
+
+//=====================================================================================//
