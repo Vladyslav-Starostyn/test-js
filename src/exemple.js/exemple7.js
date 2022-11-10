@@ -22,8 +22,8 @@
 //   console.log(product);
 // }
 
-// function logTotalPrice(product) {
-//   console.log(product.price * product.quantity);
+// function logTotalPrice({ price, quantity }) {
+//   console.log(price * quantity);
 // }
 
 // createProduct({ name: '🍎', price: 30, quantity: 3 }, logProduct);
@@ -137,18 +137,12 @@
 
 // Выполните рефакторинг кода используя стрелочные функции.
 
-// function createProduct(partialProduct, callback) {
-//   const product = { id: Date.now(), ...partialProduct };
-//   callback(product);
-// }
+// const createProduct = (partialProduct, callback) =>
+//   callback({ id: Date.now(), ...partialProduct });
 
-// function logProduct(product) {
-//   console.log(product);
-// }
+// const logProduct = product => console.log(product);
 
-// function logTotalPrice(product) {
-//   console.log(product.price * product.quantity);
-// }
+// const logTotalPrice = product => console.log(product.price * product.quantity);
 
 // createProduct({ name: '🍎', price: 30, quantity: 3 }, logProduct);
 // createProduct({ name: '🍋', price: 20, quantity: 5 }, logTotalPrice);
@@ -186,12 +180,9 @@
 //   },
 // };
 
-// function handleSuccess(message) {
-//   console.log(`✅ Success! ${message}`);
-// }
-// function handleError(message) {
-//   console.log(`❌ Error! ${message}`);
-// }
+// const handleSuccess = message => console.log(`✅ Success! ${message}`);
+
+// const handleError = message => console.log(`❌ Error! ${message}`);
 
 // account.withdraw(2000, handleSuccess, handleError);
 // account.withdraw(600, handleSuccess, handleError);
@@ -207,39 +198,23 @@
 
 // Выполните рефакторинг кода используя стрелочные функции.
 
-// function each(array, callback) {
+// const each = (array, callback) => {
 //   const newArr = [];
 //   for (const el of array) {
 //     newArr.push(callback(el));
 //   }
 //   return newArr;
-// }
+// };
 
-// console.log(
-//   each([64, 49, 36, 25, 16], function (value) {
-//     return value * 2;
-//   }),
-// );
-// console.log(
-//   each([64, 49, 36, 25, 16], function (value) {
-//     return value - 10;
-//   }),
-// );
-// console.log(
-//   each([64, 49, 36, 25, 16], function (value) {
-//     return Math.sqrt(value);
-//   }),
-// );
-// console.log(
-//   each([1.5, 2.1, 16.4, 9.7, 11.3], function (value) {
-//     return Math.ceil(value);
-//   }),
-// );
-// console.log(
-//   each([1.5, 2.1, 16.4, 9.7, 11.3], function (value) {
-//     return Math.floor(value);
-//   }),
-// );
+// console.log(each([64, 49, 36, 25, 16], value => value * 2));
+
+// console.log(each([64, 49, 36, 25, 16], value => value - 10));
+
+// console.log(each([64, 49, 36, 25, 16], value => Math.sqrt(value)));
+
+// console.log(each([1.5, 2.1, 16.4, 9.7, 11.3], value => Math.ceil(value)));
+
+// console.log(each([1.5, 2.1, 16.4, 9.7, 11.3], value => Math.floor(value)));
 
 //=====================================================================================//
 
@@ -247,12 +222,11 @@
 
 // Выполните рефакторинг кода используя метод forEach и стрелочные функции.
 
-// function logItems(items) {
+// const logItems = items => {
 //   console.log(items);
-//   for (let i = 0; i < items.length; i += 1) {
-//     console.log(`${i + 1} - ${items[i]}`);
-//   }
-// }
+
+//   items.forEach((item, i) => console.log(`${i + 1} - ${item}`));
+// };
 
 // logItems(['Mango', 'Poly', 'Ajax']);
 // logItems(['🍎', '🍇', '🍑', '🍌', '🍋']);
@@ -263,13 +237,13 @@
 
 // Выполните рефакторинг кода используя метод forEach и стрелочные функции.
 
-// function printContactsInfo({ names, phones }) {
+// const printContactsInfo = ({ names, phones }) => {
 //   const nameList = names.split(',');
 //   const phoneList = phones.split(',');
-//   for (let i = 0; i < nameList.length; i += 1) {
-//     console.log(`${nameList[i]}: ${phoneList[i]}`);
-//   }
-// }
+
+//   nameList.forEach((name, i) => console.log(`${name}: ${phoneList[i]}`));
+//   //nameList.forEach((_, i) => console.log(`${nameList[i]}: ${phoneList[i]}`));//
+// };
 
 // printContactsInfo({
 //   names: 'Jacob,William,Solomon,Artemis',
@@ -282,13 +256,12 @@
 
 // Выполните рефакторинг кода используя метод forEach и стрелочные функции.
 
-// function calсulateAverage(...args) {
+// const calсulateAverage = (...args) => {
 //   let total = 0;
-//   for (let i = 0; i < args.length; i++) {
-//     total += args[i];
-//   }
+//   args.forEach(arg => (total += arg));
+
 //   return total / args.length;
-// }
+// };
 
 // console.log(calсulateAverage(1, 2, 3, 4)); // 2.5
 // console.log(calсulateAverage(14, 8, 2)); // 8
