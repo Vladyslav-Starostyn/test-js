@@ -2,7 +2,7 @@
 
 // Example 1 - Блоггер
 
-// Напиши класс Blogger для создания обьекта блоггера со следующим свойствами:
+// Напиши класс Blogger для создания обьекта блоггера со следующими свойствами:
 
 // email - почта, строка
 // age - возраст, число
@@ -15,6 +15,23 @@
 
 // Добавь метод updatePostCount(value), который в параметре value принимает количество
 // постов которые нужно добавить пользователю.
+
+// class User {
+//   constructor({ name, age, numberOfPosts, topics }) {
+//     this.name = name;
+//     this.age = age;
+//     this.numberOfPosts = numberOfPosts;
+//     this.topics = topics;
+//   }
+
+//   getInfo() {
+//     return `User ${this.name} is ${this.age} years old and has ${this.numberOfPosts} posts`;
+//   }
+
+//   updatePostCount(value) {
+//     return (this.numberOfPosts += value);
+//   }
+// }
 
 // const mango = new User({
 //   name: 'mango@mail.com',
@@ -50,6 +67,27 @@
 // addItem(item) - получает новый товар и добавляет его к текущим.
 // removeItem(item) - получает товар и, если он есть, удаляет его из текущих.
 
+// class Storage {
+//   constructor(items) {
+//     this.items = items;
+//   }
+
+//   getItems() {
+//     return this.items;
+//   }
+
+//   addItem(item) {
+//     this.items.push(item);
+//   }
+
+//   removeItem(name) {
+//     // const element = this.items.find(item => item === name);
+//     // this.items.splice(this.items.indexOf(element), 1);
+//     //или
+//     this.items = this.items.filter(item => item !== name);
+//   }
+// }
+
 // const storage = new Storage(['🍎', '🍋', '🍇', '🍑']);
 
 // const items = storage.getItems();
@@ -69,6 +107,30 @@
 // приватные свойства #login и #email, доступ к которым сделай через геттер и сеттер
 // login и email.
 
+// class User {
+//   #login;
+//   #email;
+//   constructor({ login, email }) {
+//     this.#email = email;
+//     this.#login = login;
+//   }
+
+//   get login() {
+//     return this.#login;
+//   }
+
+//   set login(newLogin) {
+//     return (this.#login = newLogin);
+//   }
+
+//   get email() {
+//     return this.#email;
+//   }
+
+//   set email(newEmail) {
+//     return (this.#email = newEmail);
+//   }
+// }
 // const mango = new User({
 //   login: 'Mango',
 //   email: 'mango@dog.woof',
@@ -102,6 +164,37 @@
 // }
 // Добавь методы addNote(note), removeNote(text) и updatePriority(text, newPriority).
 
+// class Notes {
+//   static Priority = {
+//     LOW: 'low',
+//     NORMAL: 'normal',
+//     HIGH: 'high',
+//   };
+
+//   constructor(items = []) {
+//     this.items = items;
+//   }
+
+//   addNote(note) {
+//     this.items.push(note);
+//   }
+
+//   removeNote(text) {
+//     this.items = this.items.filter(item => item.text !== text);
+//   }
+
+//   updateNote(text, newPriority) {
+//     this.items = this.items.map(item =>
+//       item.text === text
+//         ? {
+//             ...item,
+//             priority: newPriority,
+//           }
+//         : item
+//     );
+//   }
+// }
+
 // const myNotes = new Notes([]);
 
 // myNotes.addNote({ text: 'Моя первая заметка', priority: Notes.Priority.LOW });
@@ -123,9 +216,21 @@
 
 // Example 5 - Toggle
 
-// Напишите класс Toggle который принимает объект настроек { isOpen: boolean } и объявляет
-// одно свойство on - состояние вкл / выкл(true / false).По умолчанию значение свойства
-// on должно быть false.
+// Напишите класс Toggle который принимает объект настроек { isOpen: boolean } и
+// объявляет одно свойство on - состояние вкл / выкл(true / false). По умолчанию
+// значение свойства on должно быть false.
+
+// class Toggle {
+//   constructor({ isOpen = false } = {}) {
+//     this.on = isOpen;
+//   }
+
+//   toggle() {
+//     //this.on = this.on ? false : true;
+//     //или
+//     this.on = !this.on;
+//   }
+// }
 
 // const firstToggle = new Toggle({ isOpen: true });
 // console.group('firstToggle');
